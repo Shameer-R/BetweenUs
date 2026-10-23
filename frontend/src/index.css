@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -38,4 +38,27 @@ main {
   background-color: #a783b5;
   color: #26192e;
   width: 10rem;
+}
+
+.upcoming-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.upcoming-inner-section {
+  background-color: #eae0ed;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.upcoming-inner-section > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.upcoming-inner-section > p {
+  font-size: 13px;
 }
