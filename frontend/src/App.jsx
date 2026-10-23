@@ -1,25 +1,30 @@
 import { useState } from "react";
+import { SquareCheckBig, CalendarDays, Clapperboard } from "lucide-react";
 import "./App.css";
+
+function FeatureButton({ featureName, Icon }) {
+  return (
+    <>
+      <button className="feature-button">
+        <Icon size={24} />
+        <span>{featureName}</span>
+      </button>
+    </>
+  );
+}
 
 function App() {
   return (
     <>
       <header>
-        <h1>Hi, Sham 👋</h1>
+        <h3>Good Morning</h3>
+        <h2>Karyme & Shameer 💜</h2>
       </header>
-      <main>
-        <span className="up-next">
-          <h2>Up next ❤️</h2>
-          <p>See all →</p>
-        </span>
-        <img
-          style={{ width: "20%" }}
-          src="./src/assets/images/CoralinePoster.jpg"
-          alt="Coraline Poster"
-        />
-        <h2>Our Watchlist</h2>
-        <p>Find our next movie together</p>
-      </main>
+      <div>
+        <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
+        <FeatureButton featureName="Calendar" Icon={CalendarDays} />
+        <FeatureButton featureName="Watchlist" Icon={Clapperboard} />
+      </div>
     </>
   );
 }
