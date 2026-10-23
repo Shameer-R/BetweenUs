@@ -20,7 +20,7 @@ function App() {
         <h3>Good Morning</h3>
         <h2>Karyme & Shameer 💜</h2>
       </header>
-      <div>
+      <div className="feature-buttons">
         <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
         <FeatureButton featureName="Calendar" Icon={CalendarDays} />
         <FeatureButton featureName="Watchlist" Icon={Clapperboard} />

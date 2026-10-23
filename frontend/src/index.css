@@ -1,5 +1,5 @@
 body {
-  background-color: #efefef;
+  background-color: #f7f3ed;
 }
 
 .up-next {
@@ -10,9 +10,32 @@ body {
   gap: 10rem;
 }
 
+header {
+  margin-bottom: 3rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.feature-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #a783b5;
+  color: #26192e;
+  width: 10rem;
 }
