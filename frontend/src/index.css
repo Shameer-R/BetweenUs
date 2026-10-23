@@ -1,0 +1,18 @@
+body {
+  background-color: #efefef;
+}
+
+.up-next {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
