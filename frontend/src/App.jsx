@@ -1,10 +1,5 @@
 import { useState } from "react";
-import {
-  SquareCheckBig,
-  CalendarDays,
-  Clapperboard,
-  Heart,
-} from "lucide-react";
+import { SquareCheckBig, Clapperboard, Heart, Lightbulb } from "lucide-react";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 
@@ -28,7 +23,7 @@ function App() {
       </header>
       <div className="feature-buttons">
         <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
-        <FeatureButton featureName="Calendar" Icon={CalendarDays} />
+        <FeatureButton featureName="Date Ideas" Icon={Lightbulb} />
         <FeatureButton featureName="Watchlist" Icon={Clapperboard} />
       </div>
       <div className="upcoming-section">
