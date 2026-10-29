@@ -62,3 +62,22 @@ main {
 .upcoming-inner-section > p {
   font-size: 13px;
 }
+
+.our-moments-inner-section {
+  background-color: #eae0ed;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-memory-button {
+  border: 2px solid #a782b5;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  background-color: #a782b5;
+  color: #f5eff7;
+}

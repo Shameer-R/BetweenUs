@@ -36,6 +36,14 @@ function App() {
           <p>Nothing planned yet. Add something together!</p>
         </div>
       </div>
+      <div className="our-moments-section">
+        <h3>Our Little Moments </h3>
+        <div className="our-moments-inner-section">
+          <Heart />
+          <p>Save your favorite memories together</p>
+          <button className="add-memory-button">+ Add a Memory</button>
+        </div>
+      </div>
       <Navbar />
     </>
   );
