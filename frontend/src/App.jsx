@@ -6,6 +6,7 @@ import {
   Heart,
 } from "lucide-react";
 import "./App.css";
+import Navbar from "./components/Navbar.jsx";
 
 function FeatureButton({ featureName, Icon }) {
   return (
@@ -40,6 +41,7 @@ function App() {
           <p>Nothing planned yet. Add something together!</p>
         </div>
       </div>
+      <Navbar />
     </>
   );
 }
