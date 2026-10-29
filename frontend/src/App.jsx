@@ -17,34 +17,40 @@ function FeatureButton({ featureName, Icon }) {
 function App() {
   return (
     <>
-      <header>
-        <h3>Good Morning</h3>
-        <h2>Karyme & Shameer 💜</h2>
-      </header>
-      <div className="feature-buttons">
-        <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
-        <FeatureButton featureName="Date Ideas" Icon={Lightbulb} />
-        <FeatureButton featureName="Watchlist" Icon={Clapperboard} />
-      </div>
-      <div className="upcoming-section">
-        <h3>Coming up</h3>
-        <div className="upcoming-inner-section">
-          <span>
-            <h4>Our next date</h4>
-            <Heart></Heart>
-          </span>
-          <p>Nothing planned yet. Add something together!</p>
+      <main className="homepage-container">
+        <header>
+          <h3 style={{ fontSize: "15px", marginBottom: "0rem" }}>
+            Good Morning
+          </h3>
+          <h2 style={{ fontSize: "20px", marginTop: "0.3rem" }}>
+            Karyme & Shameer 💜
+          </h2>
+        </header>
+        <div className="feature-buttons">
+          <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
+          <FeatureButton featureName="Date Ideas" Icon={Lightbulb} />
+          <FeatureButton featureName="Watchlist" Icon={Clapperboard} />
         </div>
-      </div>
-      <div className="our-moments-section">
-        <h3>Our Little Moments </h3>
-        <div className="our-moments-inner-section">
-          <Heart />
-          <p>Save your favorite memories together</p>
-          <button className="add-memory-button">+ Add a Memory</button>
+        <div className="upcoming-section">
+          <h3>Coming up</h3>
+          <div className="upcoming-inner-section">
+            <span>
+              <h4>Our next date</h4>
+              <Heart></Heart>
+            </span>
+            <p>Nothing planned yet. Add something together!</p>
+          </div>
         </div>
-      </div>
-      <Navbar />
+        <div className="our-moments-section">
+          <h3>Our Little Moments </h3>
+          <div className="our-moments-inner-section">
+            <Heart />
+            <p>Save your favorite memories together</p>
+            <button className="add-memory-button">+ Add a Memory</button>
+          </div>
+        </div>
+        <Navbar />
+      </main>
     </>
   );
 }

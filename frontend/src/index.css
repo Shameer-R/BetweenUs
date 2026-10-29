@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
 body {
   background-color: #f7f3ed;
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  font-family: inherit;
 }
 
 .up-next {
@@ -10,20 +17,20 @@ body {
   gap: 10rem;
 }
 
-header {
-  margin-bottom: 1rem;
+.homepage-container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header {
+  margin-bottom: 1rem;
 }
 
 .feature-buttons {
   display: flex;
   justify-content: space-around;
+  gap: 8px;
 }
 
 .feature-button {
@@ -34,6 +41,7 @@ main {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
+  font-weight: 600;
   border: none;
   background-color: #a783b5;
   color: #26192e;
@@ -61,6 +69,8 @@ main {
 
 .upcoming-inner-section > p {
   font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0.15rem;
 }
 
 .our-moments-inner-section {

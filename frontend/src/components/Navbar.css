@@ -13,6 +13,7 @@
 
 .nav-item {
   display: flex;
+  font-size: 13px;
   gap: 0.25rem;
   flex-direction: column;
   justify-content: center;
