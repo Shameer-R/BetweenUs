@@ -11,21 +11,21 @@ function Navbar() {
           <House />
           <span>Home</span>
         </Link>
-        <a href="#" className="nav-item">
+        <Link to={"/calendar"} className="nav-item">
           <CalendarDays />
           <span>Calendar</span>
-        </a>
+        </Link>
         <a href="#" className="nav-item nav-add-button">
           <Plus size={28} />
         </a>
-        <a href="#" className="nav-item">
+        <Link to={"/memories"} className="nav-item">
           <Heart />
           <span>Memories</span>
-        </a>
-        <a href="#" className="nav-item">
+        </Link>
+        <Link to={"/settings"} className="nav-item">
           <Settings />
           <span>Settings</span>
-        </a>
+        </Link>
       </nav>
     </>
   );

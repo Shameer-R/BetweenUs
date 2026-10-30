@@ -27,13 +27,21 @@ function Home() {
           </h2>
         </header>
         <div className="feature-buttons">
-          <FeatureButton featureName="Tasks" Icon={SquareCheckBig} />
+          <FeatureButton
+            featureName="Tasks"
+            Icon={SquareCheckBig}
+            path="/tasks"
+          />
           <FeatureButton
             featureName="Date Ideas"
             Icon={Lightbulb}
             path="/date-ideas"
           />
-          <FeatureButton featureName="Watchlist" Icon={Clapperboard} />
+          <FeatureButton
+            featureName="Watchlist"
+            Icon={Clapperboard}
+            path="/watchlist"
+          />
         </div>
         <div className="upcoming-section">
           <h3>Coming up</h3>
