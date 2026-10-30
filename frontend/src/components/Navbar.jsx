@@ -1,5 +1,5 @@
 import "../components/Navbar.css";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 import { House, CalendarDays, Plus, Heart, Settings } from "lucide-react";
 
@@ -7,25 +7,25 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to={"/"} className="nav-item">
+        <NavLink to={"/"} className="nav-item" end>
           <House />
           <span>Home</span>
-        </Link>
-        <Link to={"/calendar"} className="nav-item">
+        </NavLink>
+        <NavLink to={"/calendar"} className="nav-item">
           <CalendarDays />
           <span>Calendar</span>
-        </Link>
+        </NavLink>
         <a href="#" className="nav-item nav-add-button">
           <Plus size={28} />
         </a>
-        <Link to={"/memories"} className="nav-item">
+        <NavLink to={"/memories"} className="nav-item">
           <Heart />
           <span>Memories</span>
-        </Link>
-        <Link to={"/settings"} className="nav-item">
+        </NavLink>
+        <NavLink to={"/settings"} className="nav-item">
           <Settings />
           <span>Settings</span>
-        </Link>
+        </NavLink>
       </nav>
     </>
   );
