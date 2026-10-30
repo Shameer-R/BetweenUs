@@ -1,4 +1,5 @@
 import "../components/Navbar.css";
+import { Link } from "react-router";
 
 import { House, CalendarDays, Plus, Heart, Settings } from "lucide-react";
 
@@ -6,10 +7,10 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <a href="#" className="nav-item">
+        <Link to={"/"} className="nav-item">
           <House />
           <span>Home</span>
-        </a>
+        </Link>
         <a href="#" className="nav-item">
           <CalendarDays />
           <span>Calendar</span>
