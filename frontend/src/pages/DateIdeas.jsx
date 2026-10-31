@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import "./DateIdeas.css";
 import { Heart } from "lucide-react";
+import DateIdeaModal from "../components/DateIdeaModal";
 
 function DateIdeas() {
   return (
@@ -17,6 +18,8 @@ function DateIdeas() {
           <p>Nothing here yet! Add a date idea to get started.</p>
           <button className="add-date-idea-button"> + Add Idea</button>
         </div>
+
+        <DateIdeaModal />
         <Navbar />
       </main>
     </>
