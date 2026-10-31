@@ -1,0 +1,36 @@
+.date-ideas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 76px);
+  padding: 16px;
+}
+
+.date-ideas-container > p {
+  margin-top: 0;
+}
+
+.date-ideas-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-date-idea-button {
+  border: 2px solid #a782b5;
+  height: 2.5rem;
+  width: 12rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  background-color: #a782b5;
+  color: #f5eff7;
+  cursor: pointer;
+}
+
+.empty-date-ideas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
