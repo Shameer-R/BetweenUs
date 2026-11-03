@@ -10,6 +10,19 @@
   z-index: 1000;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #75518a;
+  padding: 8px;
+}
+
 .modal-container {
   background-color: #f5eff7;
   padding: 24px;
@@ -17,4 +30,31 @@
   width: 90%;
   max-width: 400px;
   box-sizing: border-box;
+}
+
+.date-idea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-button {
+  background-color: #a782b5;
+  border: none;
+  border-radius: 0.25rem;
+  height: 1.75rem;
+  font-size: 0.85rem;
+  color: white;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+.date-idea-form input:focus,
+.date-idea-form select:focus,
+.date-idea-form textarea:focus {
+  outline: 2px solid #a782b5;
+  outline-offset: 1px;
 }
