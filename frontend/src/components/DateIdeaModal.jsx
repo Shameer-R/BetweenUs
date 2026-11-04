@@ -1,9 +1,25 @@
+import { data } from "react-router";
 import "../components/DateIdeaModal.css";
 import { X } from "lucide-react";
 
-function DateIdeaModal({ onClose }) {
+function DateIdeaModal({ onClose, addDateIdea }) {
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+
+    const newIdea = {
+      id: crypto.randomUUID,
+      dateTitle: formData.get("date-idea"),
+      dateCategory: formData.get("category"),
+      dateDescription: formData.get("description"),
+      dateBudget: formData.get("budget"),
+      dateStatus: false,
+    };
+
+    addDateIdea(newIdea);
+    onClose();
+
     console.log("Form submitted");
   };
 
