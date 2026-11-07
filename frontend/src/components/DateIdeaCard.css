@@ -4,6 +4,8 @@
   border-radius: 12px;
   padding: 20px;
   width: 25vw;
+  max-width: 100px;
+  max-height: px;
 }
 
 .date-idea-card-header {
@@ -11,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .date-idea-card-footer {
@@ -18,6 +22,8 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  font-size: 0.6rem;
+  text-align: center;
 }
 
 .date-idea-category {
@@ -25,5 +31,6 @@
   color: #895c6b;
   padding: 4px 8px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 0.6rem;
+  text-align: center;
 }
