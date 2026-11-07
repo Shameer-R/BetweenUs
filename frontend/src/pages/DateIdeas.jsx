@@ -13,6 +13,18 @@ function DateIdeas() {
     setDateIdeas((prevIdeas) => [...prevIdeas, newIdea]);
   }
 
+  function toggleDateStatus(id) {
+    setDateIdeas((prevIdeas) =>
+      prevIdeas.map((idea) => {
+        if (idea.id === id) {
+          return { ...idea, dateStatus: !idea.dateStatus };
+        } else {
+          return idea;
+        }
+      }),
+    );
+  }
+
   return (
     <>
       <main className="date-ideas-container">
@@ -53,6 +65,7 @@ function DateIdeas() {
               dateDescription={idea.dateDescription}
               dateBudget={idea.dateBudget}
               dateStatus={idea.dateStatus}
+              onDateStatusChange={() => toggleDateStatus(idea.id)}
             />
           ))}
         </div>

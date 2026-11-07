@@ -6,10 +6,11 @@ function DateIdeaCard({
   dateDescription,
   dateBudget,
   dateStatus,
+  onDateStatusChange,
 }) {
   return (
     <>
-      <div className="date-idea-card">
+      <div className={`date-idea-card ${dateStatus ? "completed" : ""}`}>
         <div className="date-idea-card-header">
           <h3>{dateTitle}</h3>
           <p className="date-idea-category">{dateCategory}</p>
@@ -25,7 +26,11 @@ function DateIdeaCard({
                 ? "$$"
                 : "$$$"}
           </p>
-          <p>{dateStatus ? "Completed" : "Not Completed"}</p>
+          <input
+            type="checkbox"
+            checked={dateStatus}
+            onChange={onDateStatusChange}
+          />
         </div>
       </div>
     </>

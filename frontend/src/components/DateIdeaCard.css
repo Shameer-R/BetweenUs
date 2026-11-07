@@ -8,6 +8,10 @@
   max-height: px;
 }
 
+.date-idea-card.completed {
+  background-color: #d4edda;
+}
+
 .date-idea-card-header {
   display: flex;
   justify-content: space-between;
