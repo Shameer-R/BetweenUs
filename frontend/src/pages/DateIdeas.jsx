@@ -18,6 +18,16 @@ function DateIdeas() {
       <main className="date-ideas-container">
         <div className="date-ideas-header-container">
           <h1>Date Ideas</h1>
+
+          {dateIdeas.length > 0 && (
+            <button
+              className="add-date-idea-button"
+              onClick={() => setIsModalOpen(true)}
+            >
+              {" "}
+              + Add Idea
+            </button>
+          )}
         </div>
 
         <p>Our future adventures together!</p>
@@ -36,16 +46,18 @@ function DateIdeas() {
           </div>
         )}
 
-        {dateIdeas.map((idea) => (
-          <DateIdeaCard
-            key={idea.id}
-            dateTitle={idea.dateTitle}
-            dateCategory={idea.dateCategory}
-            dateDescription={idea.dateDescription}
-            dateBudget={idea.dateBudget}
-            dateStatus={idea.dateStatus}
-          />
-        ))}
+        <div className="date-ideas-list">
+          {dateIdeas.map((idea) => (
+            <DateIdeaCard
+              key={idea.id}
+              dateTitle={idea.dateTitle}
+              dateCategory={idea.dateCategory}
+              dateDescription={idea.dateDescription}
+              dateBudget={idea.dateBudget}
+              dateStatus={idea.dateStatus}
+            />
+          ))}
+        </div>
 
         {isModalOpen && (
           <DateIdeaModal

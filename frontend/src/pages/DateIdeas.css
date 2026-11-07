@@ -4,6 +4,9 @@
   justify-content: center;
   min-height: calc(100vh - 76px);
   padding: 16px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .date-ideas-container > p {
@@ -33,4 +36,10 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+}
+
+.date-ideas-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
