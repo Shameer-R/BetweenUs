@@ -30,8 +30,6 @@ function DateIdeas() {
           )}
         </div>
 
-        <p>Our future adventures together!</p>
-
         {dateIdeas.length == 0 && (
           <div className="empty-date-ideas-container">
             <Heart size={48} color="#bd86f5" />

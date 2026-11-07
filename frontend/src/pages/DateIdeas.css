@@ -1,12 +1,13 @@
 .date-ideas-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: calc(100vh - 76px);
   padding: 16px;
   padding-bottom: 80px;
   box-sizing: border-box;
   overflow-y: auto;
+  font-size: 0.7rem;
 }
 
 .date-ideas-container > p {
@@ -36,6 +37,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+  text-align: center;
 }
 
 .date-ideas-list {
