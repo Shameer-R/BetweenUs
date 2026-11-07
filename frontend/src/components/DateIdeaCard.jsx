@@ -1,4 +1,5 @@
 import "../components/DateIdeaCard.css";
+import { Trash2 } from "lucide-react";
 
 function DateIdeaCard({
   dateTitle,
@@ -11,6 +12,10 @@ function DateIdeaCard({
   return (
     <>
       <div className={`date-idea-card ${dateStatus ? "completed" : ""}`}>
+        <button className="date-idea-card-trash-button">
+          <Trash2 size={15} />
+        </button>
+
         <div className="date-idea-card-header">
           <h3>{dateTitle}</h3>
           <p className="date-idea-category">{dateCategory}</p>

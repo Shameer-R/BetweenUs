@@ -1,15 +1,25 @@
 .date-idea-card {
+  position: relative;
   background-color: #fff9f5;
   border: 1px solid #e9dcd5;
   border-radius: 12px;
   padding: 20px;
-  width: 25vw;
-  max-width: 100px;
-  max-height: px;
+  width: 200px;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .date-idea-card.completed {
   background-color: #d4edda;
+}
+
+.date-idea-card-trash-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .date-idea-card-header {
@@ -19,7 +29,7 @@
   margin-bottom: 10px;
   font-size: 0.7rem;
   text-align: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .date-idea-card-footer {
