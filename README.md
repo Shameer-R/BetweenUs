@@ -16,9 +16,11 @@ I'm working on this project to build my React skills and gain more experience bu
 ### Currently Implemented
 - Navigation between different pages
 - Date ideas page with modal to add new data ideas
+- Marking date ideas as completed
+- Deletion of date ideas
 
 ### Planned Features
-- Marking date ideas as completed
+- Date idea editing
 - Saving data between sessions
 - Movie and TV show watchlist
 - Shared tasks and calendar
