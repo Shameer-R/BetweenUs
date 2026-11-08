@@ -8,11 +8,12 @@ function DateIdeaCard({
   dateBudget,
   dateStatus,
   onDateStatusChange,
+  onDelete,
 }) {
   return (
     <>
       <div className={`date-idea-card ${dateStatus ? "completed" : ""}`}>
-        <button className="date-idea-card-trash-button">
+        <button className="date-idea-card-trash-button" onClick={onDelete}>
           <Trash2 size={15} />
         </button>
 

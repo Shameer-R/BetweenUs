@@ -25,6 +25,10 @@ function DateIdeas() {
     );
   }
 
+  function deleteDateIdea(id) {
+    setDateIdeas((prevIdeas) => prevIdeas.filter((idea) => idea.id !== id));
+  }
+
   return (
     <>
       <main className="date-ideas-container">
@@ -66,6 +70,7 @@ function DateIdeas() {
               dateBudget={idea.dateBudget}
               dateStatus={idea.dateStatus}
               onDateStatusChange={() => toggleDateStatus(idea.id)}
+              onDelete={() => deleteDateIdea(idea.id)}
             />
           ))}
         </div>
