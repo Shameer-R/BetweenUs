@@ -1,0 +1,38 @@
+.watchlist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e8e0e8;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 epx 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.watchlist-card h3 {
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.watchlist-card p {
+  margin-bottom: 0px;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.watchlist-card:hover {
+  transform: translateY(-4px);
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background-color: #e9dcef;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

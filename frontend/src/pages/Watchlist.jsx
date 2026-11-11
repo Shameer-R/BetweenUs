@@ -1,10 +1,17 @@
 import Navbar from "../components/Navbar";
+import WatchListCard from "../components/WatchListCard";
+import "../pages/Watchlist.css";
 
 function Watchlist() {
   return (
     <>
       <h1>Watchlist</h1>
-      <p>Moves we need to watch will go here</p>
+      <div className="watchlist-container">
+        <WatchListCard />
+        <WatchListCard />
+        <WatchListCard />
+        <WatchListCard />
+      </div>
       <Navbar />
     </>
   );
