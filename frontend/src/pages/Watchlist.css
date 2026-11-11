@@ -9,3 +9,55 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
+
+.watchlist-filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.watchlist-filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  flex-wrap: wrap;
+}
+
+.watchlist-filter-buttons > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid #e8dfea;
+  margin-right: 5px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  width: fit-content;
+}
+
+.watchlist-filter-buttons > button:hover {
+  background-color: #f3eaf5;
+}
+
+.watchlist-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e8dfea;
+  border-radius: 12px;
+  background-color: white;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.watchlist-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+  min-width: 0;
+  flex: 1;
+}
