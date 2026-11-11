@@ -5,13 +5,20 @@ import "../pages/Watchlist.css";
 function Watchlist() {
   return (
     <>
-      <h1>Watchlist</h1>
-      <div className="watchlist-container">
-        <WatchListCard />
-        <WatchListCard />
-        <WatchListCard />
-        <WatchListCard />
+      <div className="watchlist-page">
+        <h1>Watchlist</h1>
+        <div className="watchlist-container">
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+          <WatchListCard />
+        </div>
       </div>
+
       <Navbar />
     </>
   );
