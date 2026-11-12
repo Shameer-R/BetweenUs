@@ -3,7 +3,21 @@ import WatchListCard from "../components/WatchListCard";
 import "../pages/Watchlist.css";
 import { Tv, Film, Search } from "lucide-react";
 
+import interstellar from "../assets/images/Interstellar.jpg.webp";
+import inception from "../assets/images/Inception.jpg.webp";
+import breakingBad from "../assets/images/BreakingBad.jpg.webp";
+
 function Watchlist() {
+  const watchList = [
+    { id: 1, title: "Interstellar", type: "Movie", imageUrl: interstellar },
+    { id: 2, title: "Inception", type: "Movie", imageUrl: inception },
+    {
+      id: 3,
+      title: "Breaking Bad",
+      type: "TV Show",
+      imageUrl: breakingBad,
+    },
+  ];
   return (
     <>
       <div className="watchlist-page">
@@ -29,14 +43,14 @@ function Watchlist() {
         </div>
 
         <div className="watchlist-container">
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
-          <WatchListCard />
+          {watchList.map((media) => (
+            <WatchListCard
+              id={media.id}
+              title={media.title}
+              type={media.type}
+              poster={media.imageUrl}
+            />
+          ))}
         </div>
       </div>
 
