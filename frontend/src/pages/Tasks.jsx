@@ -1,8 +1,18 @@
 import Navbar from "../components/Navbar";
 import TaskCard from "../components/TaskCard";
+import TaskListModal from "../components/TaskModal";
 import "../pages/Tasks.css";
+import { useState, useEffect } from "react";
 
 function Tasks() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const onNavAdd = () => setIsModalOpen(true);
+    window.addEventListener("nav-add-click", onNavAdd);
+    return () => window.removeEventListener("nav-add-click", onNavAdd);
+  });
+
   return (
     <>
       <div className="tasks-page">
@@ -15,6 +25,8 @@ function Tasks() {
           <TaskCard />
         </div>
       </div>
+
+      {isModalOpen && <TaskListModal onClose={() => setIsModalOpen(false)} />}
 
       <Navbar />
     </>
