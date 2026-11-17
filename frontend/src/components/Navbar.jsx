@@ -1,9 +1,15 @@
 import "../components/Navbar.css";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 
 import { House, CalendarDays, Plus, Heart, Settings } from "lucide-react";
 
 function Navbar() {
+  const { pathname } = useLocation();
+
+  const handleAddClick = () => {
+    window.dispatchEvent(new Event("nav-add-click"));
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -15,9 +21,13 @@ function Navbar() {
           <CalendarDays />
           <span>Calendar</span>
         </NavLink>
-        <a href="#" className="nav-item nav-add-button">
+        <button
+          type="button"
+          onClick={handleAddClick}
+          className="nav-item nav-add-button"
+        >
           <Plus size={28} />
-        </a>
+        </button>
         <NavLink to={"/memories"} className="nav-item">
           <Heart />
           <span>Memories</span>
