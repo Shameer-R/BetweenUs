@@ -1,13 +1,23 @@
 import Navbar from "../components/Navbar";
 import WatchListCard from "../components/WatchListCard";
+import WatchListModal from "../components/WatchListModal";
 import "../pages/Watchlist.css";
 import { Tv, Film, Search } from "lucide-react";
+import { useState, useEffect } from "react";
 
 import interstellar from "../assets/images/Interstellar.jpg.webp";
 import inception from "../assets/images/Inception.jpg.webp";
 import breakingBad from "../assets/images/BreakingBad.jpg.webp";
 
 function Watchlist() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const onNavAdd = () => setIsModalOpen(true);
+    window.addEventListener("nav-add-click", onNavAdd);
+    return () => window.removeEventListener("nav-add-click", onNavAdd);
+  });
+
   const watchList = [
     { id: 1, title: "Interstellar", type: "Movie", imageUrl: interstellar },
     { id: 2, title: "Inception", type: "Movie", imageUrl: inception },
@@ -53,6 +63,8 @@ function Watchlist() {
           ))}
         </div>
       </div>
+
+      {isModalOpen && <WatchListModal onClose={() => setIsModalOpen(false)} />}
 
       <Navbar />
     </>
