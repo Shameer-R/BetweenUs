@@ -17,6 +17,8 @@ function WatchListModal({ onClose }) {
               <X size={24} />
             </button>
           </div>
+
+          <input placeholder="Enter show/movie name..."></input>
         </div>
       </div>
     </>
