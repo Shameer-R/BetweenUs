@@ -1,0 +1,34 @@
+.task-filter-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px; /* Match whatever max-width you use for your task cards */
+  margin: 16px auto 24px;
+  padding: 4px;
+  border-radius: 14px;
+  gap: 2rem;
+}
+
+.task-filter-container > button {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid #e8dfea;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b6470;
+  transition: all 0.2s ease;
+}
+
+.task-filter-container > button:hover {
+  color: #1f1b24;
+  background-color: #f3edf5;
+}
+
+.task-filter-container > button.active {
+  background-color: #ffffff;
+  color: #1f1b24;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
